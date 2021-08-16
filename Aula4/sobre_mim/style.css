@@ -133,3 +133,18 @@ img{
     font-size: 1vw;
 }
 
+@media(max-width: 1500px) {
+    .perfil{
+        position: absolute;
+        left: 406px;
+        top: 90px;
+    }
+
+    .conteudo{
+        width: 1000px;
+    }
+
+    .conteiner{
+        left: 25px;
+    }
+}

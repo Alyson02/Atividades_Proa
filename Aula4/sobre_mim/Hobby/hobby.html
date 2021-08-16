@@ -8,7 +8,7 @@
     <style>
         *{
             margin: 0;
-            overflow: hidden;
+            overflow: -moz-hidden-unscrollable;
         }
         header{
             background-color: bisque;
@@ -21,16 +21,226 @@
             background-image: url(2738.jpg);
         }
         header h1{
-            color: rgb(255, 255, 255);
+            color: rgb(255, 85, 198);
             font-size: 80px;
             background-color: rgba(0, 0, 0, 0.733);
+            font-family: fantasy;
         }
 
+        body{
+            font-family: Arial;
+            font-size: 20px;
+            
+        }
+
+        body hr{
+            height:20px;
+            background-color: rgb(241, 71, 136);
+            width:40%;
+            border: none;
+            display: block;
+            margin-left:auto;
+            margin-right:auto;
+            position: relative;
+            top: 60px;
+        }
+
+        .titulo
+        {
+            position: relative;
+            text-align: center;  
+            top: 250px;  
+            color: rgb(235, 235, 235);
+            font-size: 60px;
+            font-family: fantasy;
+        }
+
+        .conteudo{
+            margin-top: 100px;
+            width: 100%;
+        }
+
+        .conteudo1{
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+
+        .conteudo1 p, tr{
+            padding-top:40px;
+        }
+
+        .conteudo1 h1 {
+            color:#8a2be2;
+            font-size: 50px;
+        }
+
+        .conteudo1 img{
+            width: 600px;
+            height: 500px;
+        }
+
+        .gif{
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 70px;
+        }
+
+        .gif img{
+            padding: 30px;
+            width: 250px;
+            height: 200px;
+        }
+
+        .tab2{
+            margin-top: 70px;
+        }
+
+        .conteudo2{
+            margin-top:70px;
+            background-color: rgb(151, 55, 160);
+            width: 100%;
+            height: 60em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .conteudo2-text{
+            position: relative;
+            bottom: 350px;
+            width:100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .conteudo2-text span{
+            font-family: Georgia;
+            font-size: 30px;
+            font-weight: bold;
+            color:rgb(241, 71, 136);
+        }
+
+        .mais2hob{
+            width:100%;
+            background-color:bisque;
+            display: flex;
+            justify-content: center;
+        }
+
+        .anda, .coz{
+            width: 571px;
+            margin-left: 60px;
+            margin-right: 10px;
+        }
+
+        .conteudo2-text{
+            color:white;
+        }
+
+        .anime h1 {
+            color:#8a2be2;
+            font-size: 50px;
+        }
+
+        .anime p, tr{
+            padding-top:40px;
+            margin-right: 80px;
+        }
+
+        .anime{
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+
+        .draken{
+            position: relative;
+
+        }
+
+        .rengoku{
+            position: relative;
+            top:80px;
+            right: 110px;
+        }
+
+        .itadori{
+            position: relative;
+            left:280px;
+        }
+
+        
+        
     </style>
 </head>
 <body>
     <header>
         <h1>HOOBIES</h1>
     </header>
+    <div class="conteudo">
+        <section class="conteudo1">
+            <table>
+                <tr>
+                    <td>
+                        <h1>Jogar games</h1>
+                        <p>Jogar games pra mim é uma das maneiras que tenho de tirar o tédio ou stress <br>
+                        Isso fica ainda mais divertido quando jogamos online com amigos. Um de meus jogos(ou série) <br>
+                        favoritos são os games da from. de Sekiro a Dark Souls, a from manda bem em todos. <br>
+                        Ansioso pela estreia de elden ring.</p>
+                    </td>
+                    <td>
+                        <img src="undraw_old_day_6x25.svg">
+                    </td>
+                </tr>
+               
+            </table>
+            <div class="gif">
+                <img src="https://i.pinimg.com/originals/4c/37/61/4c3761bba8e8801dc069487a2599cf19.gif">
+                <img src="https://thumbs.gfycat.com/AccurateGroundedBrownbutterfly-size_restricted.gif">
+                <img src="https://64.media.tumblr.com/38f1687e493d81f519fa54faeea5c5e7/tumblr_o18bblfOoK1uutgwwo2_500.gifv">
+            </div>
+
+            <table class="tab2">
+                <tr>
+                    <td>
+                        <img src="undraw_basketball_agx4.svg">
+                    </td>
+                    <td>
+                        <h1>Jogar Basquete</h1>
+                        <p>Comecei a jogar basquete com meus amigos do nada, gostamos tanto que continuamos a jogar. Apesar de eu não ser muito bom, gosto de mais de jogar. Dar toco nos outros é muito divertido hahaha.</p>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <h1 class="titulo">Hobbies que eu queria ter<hr></h1>
+        <section class="conteudo2">
+            <div class="mais2hob">
+                <img src="Cuidado-com-a-água-que-você-usa-para-cozinhar.jpg" alt="">
+                <img src="thinkstockphotos-860246654.jpg" alt="">
+            </div>
+        </section>
+        <section class="conteudo2-text">
+            <div class="coz"><span>Cozinhar</span> é algo que eu faço corriqueiramente mas não por hobby,, minhas habilidades estão limitadas a coisas que são fáceis de fritar(linguiça, frango...).</div>
+            <div class="anda"><span>Caminhar</span> sempre é bem vindo, durante uma fase da minha vida comecei a caminhar, mas do nada, parei. Atualmente falo que vou voltar mas venho procastinando muito.</div></div>
+        </section>
+        <section class="anime">
+            <table>
+                <tr>
+                    <td>
+                        <h1>Assistir animes</h1>
+                        <p>Com certeza não vou parar de ver animes tão cedo. Sempre quando acho que vou parar de assistir, invento de "dar uma olhada" em um anime novo e fico totalmente viciado nele.</p>
+                    </td>
+                    </td>
+                    <td style="width: 571px">
+                        <img class="dranken" src="Draken Vs Hanma - Tokyo Revengers.gif" alt="">
+                        <img class="rengoku" src="RENGOKU VS AKAZA O GOLPE FINAL  _ Dublado (1080p) _ Kimetsu no yaiba Filme Mugen Train.gif" alt="">
+                        <img class="itadori" src="Itadori e Todou vs Hanami _ JUJUTSU KAISEN.gif" alt="">
+                    </tr>
+                </tr>
+            </table>
+        </section>
+    </div>
 </body>
 </html>
