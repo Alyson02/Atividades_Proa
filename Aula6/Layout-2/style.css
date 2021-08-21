@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+}
+
+header{
+    background-color: rgb(145, 252, 145);
+    width: 100vw; height: 20vh;
+}
+
+div .left{
+    background-color: rgb(255, 255, 155);
+    width: 20vw; height: 40vh;
+    margin: 20px 20px 2ppp0px 0; 
+}
+
+.center{
+    background-color: rgb(255, 125, 125);
+    width: 20vw; height: 40vh;
+
+}
+
+.rigth{
+    background-color: rgb(111, 169, 235);
+    width: 20vw; height: 80vh;
+    z-index: 1000;
+    opacity: 0.3;
+}
+
+div{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+footer{
+    background-color: rgb(145, 252, 145);
+    width: 80vw; height: 20vh;
+    align-self: flex-end;   
+    order: -1;
+    position: absolute;
+}
