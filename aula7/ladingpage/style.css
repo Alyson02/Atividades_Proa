@@ -179,7 +179,14 @@ p{
     width:60%;
     background-color: white;
     height: 100%;
+    background-image: url(Mockup\ 1.jpg);
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 1300px) {
+    .left{
     background-image: url(livra.jpg);
+    }
 }
 
 .rigth{
