@@ -1,0 +1,222 @@
+   
+*{
+    box-sizing: border-box;
+    margin:0;
+}
+
+body{
+    
+}
+
+.conteiner{
+    background-color: bisque;
+    margin: 0;
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-color:#121329;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding:20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin:0;
+}
+
+header h1{
+    color: rgb(255, 255, 255);
+}
+
+header h1 span{
+    color: rgb(236, 45, 45);
+}
+
+p{
+    margin-top: 20px;
+}
+
+.landing-ex{
+    text-align: center;
+    background-color:white;
+    width: 25vw;
+    height: 80vh; 
+    border-radius: 6px;
+    flex-direction: column;
+    color: #999c9e;
+}
+
+.meio{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 40px;  
+    align-items: center;
+}
+
+.meio div{
+    width: 60%;
+    background-color: #ebebeb;
+    height: 10px; 
+    margin-top: 10px;
+    border-radius: 6px;
+}
+
+.final{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    height: 50%;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.final div{
+    width: 60%;
+    background-color: #ebebeb;
+    height: 10px; 
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.final .circle{
+    border-radius: 1000px;
+    width: 30px;
+    height: 30px; 
+    background-color: #ebebeb;
+    margin-bottom: 20px;
+}
+
+.conteiner2{
+    width: 100%;
+    height: 100vh;
+    padding: 80px;
+    overflow: hidden;
+}
+
+.conteiner2 h1{
+    text-align: center;
+    font-size: 4vw;
+    color: #121329;
+}
+
+.conteiner2 p{
+    font-size: 2vw;
+}
+
+.conteiner2 .sub-conteiner2{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    font-family: arial;
+    margin-top: 40px;
+    justify-content: space-between;
+}
+
+.conteiner2 img{
+    width: 600px;
+    height: 200px;
+    align-self:flex-end;
+    margin-top: 10px;
+}
+
+.conteiner3{
+    width: 100%;
+    height: 100vh;
+    background-color: #ebebeb;
+    padding:60px;
+    overflow: hidden;
+}
+
+.conteiner3 h1{
+    text-align: center;
+    font-size: 4vw;
+    color: #121329;
+}
+
+.sub-conteiner3 .caracteristicas{
+    width: 100%;
+    height: 100%;
+    padding:12px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction:row;
+    margin-top: 20px;
+    
+}
+
+.caracteristicas div{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    width:120px;
+    height: 220px;
+    width: 100px;
+    white-space: normal;
+    align-items: baseline;
+}
+
+.caracteristicas div p{
+    margin-top: 0;
+    text-align: center;
+}
+
+.conteiner4{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left{
+    width:60%;
+    background-color: white;
+    height: 100%;
+    background-image: url(livra.jpg);
+}
+
+.rigth{
+    width:40%;
+    background-color: rgb(28, 27, 70);
+    height: 100%;
+    padding:5px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.rigth form{
+    display: flex;
+    flex-direction:column;
+    color: white;
+}
+
+.btn{
+    margin-top: 30px;
+    background-color: rgb(196, 5, 5);
+    border: 1px solid rgba(0, 0, 0, 0);
+    cursor:pointer;
+    color: white;
+    height: 25px;
+    transition:all .6s;
+}
+
+.btn:hover{
+    background-color: rgb(138, 20, 20);
+}
+
+.p-rigth{
+    align-self:  flex-start;
+    position: absolute;
+    margin-left: 10px;
+    margin-right:10px;
+    color: white;
+}
+
