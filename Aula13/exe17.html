@@ -1,0 +1,41 @@
+
+
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>17</title>
+        <script>
+            
+            function calcularIdadeKat(idade, nome){
+            
+                var espectativa;
+
+                if(idade == 1){
+                    espectativa = 15;
+                    document.write(`${nome} tem ${espectativa} anos em anos de humanos!` + "<br/>");
+                }else if(idade == 2){
+                    espectativa = 25
+                    document.write(`${nome} tem ${espectativa} anos em anos de humanos!` + "<br/>");
+                }else if(idade >= 3){
+                    espectativa = 25;
+                    for(var i = 3; i < idade; i++){
+                        espectativa =  espectativa + 4;
+                    }
+                    document.write(`${nome} tem ${espectativa} anos em anos de humanos! Um(a) gato com 3 anos, tem aproximadamente 25 anos, depois disso soma-se 4 para cada ano excedente` + "<br/>");
+                }
+            }
+
+            calcularIdadeKat(1, "Mona");
+
+        </script>
+    </head>
+    
+<body>
+    
+</body>
+    
+</html>
