@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="cifraIcon.png">
+    <script src="script.js"></script>
+    <title>Responsive</title>
+    
+</head>
+<body id="body">
+    <header>
+        <h1>MOvetech</h1>
+        <div class="center">
+            <input type="checkbox" name="theme">
+        </div>
+    </header>
+    
+    <h2>Simulador</h2>
+
+    <div class="main" id="main">  
+        <div id="conteudo" class="form">  
+        <div class="nome">
+            <div class="text"><label for="Nome">Nome: </label></div>
+            <div><input id="input_nome" type="text"></div>
+        </div>
+
+        <div class="mensa">
+            <div class="text"><label for="Nome">Mensalidade: </label></div>
+            <div><input id="input_mensalidade" type="number"></div>
+        </div>
+
+        <div class="time">
+            <div class="text"><label for="Nome">Tempo: </label></div>
+            <div>
+                <select id="input_tempo">
+                    <option>Selecione</option>
+                    <option>1 ano</option>
+                    <option>2 anos</option>
+                </select>
+            </div>
+            </div>
+        </div>
+    </div> 
+
+    <div class="sim" id="sim"><input class="botao" id="btn_simular" value="Simular" type="button" 
+        onclick="limpar()">
+    </div>
+    
+    <script src="movetech.js"></script>
+</body>
+</html>

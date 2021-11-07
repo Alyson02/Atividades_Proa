@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>15</title>
+    <script>
+        const drone = 8190.00;
+            var parc = Number(prompt("Parcelar em quantas vezes (max 15): "));
+
+            if(parc < 16 && parc > 0){
+                    for(var i = 1; i <= parc; i++){
+                        var result = drone / parc;
+                        document.write(i + "° parcela: " + result + "<br>")
+                    }
+            }else{
+                alert("Não é possivel fazer essa parcela, deve ser acima de 0 e abaixo de 16");
+            }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,305 @@
+html{
+--bg:#ffffff;
+--color-header: #34af68;
+--color-text:#ffffff;
+--color-title:#34af68;
+--label:#000000;
+--input:#ffffff;
+--text-input:#000000;
+--botao:#5baaeb;
+--botao-borda:#14546d;
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body{
+    background-color: var(--bg);
+    background-image: url(cifra.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 20%;
+    background-position-x: 50%;
+
+}
+
+@font-face {
+    font-family:'portal';
+    src: url(portal.ttf);
+} 
+
+@font-face {
+    font-family: 'Economica-Regular';
+    src: url(Economica-Regular.ttf);
+} 
+
+header{
+    background-color:var(--color-header);
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:var(--color-text);
+    flex-direction: column-reverse;
+}
+
+.center{
+    align-self: flex-end;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.center input{
+    margin: 0;
+    width: auto;
+    height: auto;
+    margin-top: 10px;
+}
+
+input[type="checkbox"]{
+    position: relative; 
+    width: 50px;
+    height: 25px;
+    -webkit-appearance:none;
+    background-color:rgb(75, 75, 75);
+    outline: none;
+    border-radius: 20px;
+    box-shadow: inset 0 0 5px rgba(0,0,0,.2);
+    /* transition: .5s; */
+}
+
+input:checked[type="checkbox"]{
+    background-color: #ffffff;
+}
+
+input[type="checkbox"]:before{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    top: -3px;
+    left: 0;
+    background: #fff;
+    transform: scale(1.1);
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+    transition: .5s;
+}
+
+input:checked[type="checkbox"]:before{
+    left: 20px;
+    background-color: rgb(75, 75, 75);
+}
+
+
+header h1{
+    font-size: 10vw;
+    font-family: portal;
+}
+
+td{
+    margin-top: 20px;
+}
+
+.main{
+
+    width: 100vw;
+    margin-top: 30px;
+    font-family: Economica-Regular;
+}
+
+h2{
+    color:var(--color-title);
+    font-size: 11vw;
+    margin-left: 10px;
+    margin-top: 50px;
+    font-family: Economica-Regular;
+}
+
+.main h2, label, input, select{
+   margin-left: 10px;
+   margin-top: 17px;
+   margin-bottom: 10px;
+}
+
+.sim{
+    margin-top: 20px;
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+}
+
+input, select:focus{
+    outline-color: #34af68;
+}
+
+label{
+    font-family: Arial;
+    font-size: 3.6vw;
+    color:var(--label);
+    font-weight: bold;
+}
+
+input{
+    width: 80vw;
+    height: 30px;
+}
+
+.botao{
+    width: 40vw;
+    background-color: var(--botao);
+    height: 30px;
+    border: 2px solid var(--botao-borda);
+    border-radius: 2px;
+    color: white;
+    margin-top: 65px;
+}
+
+.botao:hover{
+    cursor: pointer;
+    transition: all 1s;
+    background-color:var(--botao-borda);
+}
+
+.form{
+    margin-top: 50px;
+}
+
+select{
+    height: 30px;
+}
+
+input[type="text"], input[type="number"], select{
+    width: 80vw;
+    height: 30px;
+    background-color:var(--input);
+    color:var(--text-input);
+    border: solid 2px #2d2e2e;
+}
+
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    header{
+        height: 70px;
+    }
+    
+    header h1{
+        font-size: 4vw;
+    }
+
+    h2{
+        font-size: 4vw;
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    label{
+        font-size: 2vw;
+    }
+
+    .nome, .mensa, .time{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    input[type="text"], input[type="number"], select{
+        width: 400px;
+    }
+
+    .nome .text, .mensa .text, .time .text {
+        display: flex;
+        justify-content: end;
+    }
+
+    #conteudo1{
+        display: flex;
+        justify-content: center;
+    }
+
+    .botao{
+        width: 200px;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    header{
+        height: 100px;
+    }
+
+    header h1{
+        font-size: 3vw;
+    }
+
+    h2{
+        font-size: 3vw;
+        
+    }
+
+    label{
+        font-size: 1.5vw;
+    }
+
+    .nome, .mensa, .time{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+    }
+
+    input[type="text"], input[type="number"], select{
+        width: 700px;
+        font-size: 1.1vw;
+        height: 40px;
+    }
+
+    .botao{
+        width: 350px;
+    }
+
+    .text{
+        align-items: center;
+    }
+}
+
+@media only screen and (min-width: 1500px){
+    header{
+        height: 100px;
+    }
+
+    header h1{
+        font-size: 3vw;
+    }
+
+    h2{
+        font-size: 3vw;
+        
+    }
+
+    label{
+        font-size: 1.5vw;
+    }
+
+    .nome, .mensa, .time{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    input[type="text"], input[type="number"], select{
+        width: 700px;
+        font-size: 1.1vw;
+        height: 40px;
+    }
+
+    .botao{
+        width: 350px;
+    }
+
+    .text{
+        align-items: center;
+    }
+}
